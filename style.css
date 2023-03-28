@@ -1,0 +1,150 @@
+:root {
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+  --fs: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+body,
+html {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.main-header {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem;
+  color: var(--White);
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navigation li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation li a {
+  color: var(--White);
+  padding-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.border-bottom {
+  background-color: transparent;
+  width: 20px;
+  height: 2px;
+  transition: 0.3s;
+}
+
+li:hover .border-bottom {
+  background-color: var(--White);
+}
+
+.heading-section {
+  margin-top: -121px;
+  display: flex;
+}
+
+.heading-section .main-image {
+  width: 60%;
+}
+
+.heading-section__text {
+  width: 40%;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  padding-inline: 3rem;
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--Black);
+}
+
+p {
+  font-size: var(--fs);
+  line-height: 1.5;
+  color: var(--Dark-Gray);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.shop-now-btn {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 10px;
+  color: var(--Black);
+  background: url(images/icon-arrow.svg) no-repeat right top;
+  width: 215px;
+  transition: 0.3s;
+}
+
+.shop-now-btn:hover {
+  color: var(--Dark-Gray);
+  background: url(images/icon-arrow-hover.svg) no-repeat right top;
+}
+
+.slider-buttons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+.slider-buttons button {
+  background-color: var(--Black);
+  padding: 1.5rem 2rem;
+  width: 50%;
+  transition: 0.3s;
+}
+
+.slider-buttons button:hover {
+  background-color: var(--Very-Dark-Gray);
+}
+
+.about-section {
+  display: flex;
+}
+
+.about-section__text {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+h2 {
+  text-transform: uppercase;
+}
