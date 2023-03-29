@@ -1,6 +1,11 @@
 const slides = document.querySelectorAll(".heading-section");
 const previousBtns = document.querySelectorAll(".previous-btn");
 const nextBtns = document.querySelectorAll(".next-btn");
+const menuBtn = document.querySelector(".menu-btn");
+const closeBtn = document.querySelector(".close-btn");
+const navigation = document.querySelector(".mobile-nav-bg");
+
+// SLIDER
 
 let currentSlide = 0;
 
@@ -25,3 +30,15 @@ function changeSlide(n) {
   slides[n].classList.toggle("active");
   currentSlide = n;
 }
+
+//  MOBILE NAGIVATION
+
+menuBtn.addEventListener("click", () => {
+  navigation.classList.add("active");
+  menuBtn.classList.add("hidden");
+});
+
+closeBtn.addEventListener("click", () => {
+  navigation.classList.remove("active");
+  menuBtn.classList.remove("hidden");
+});

@@ -63,6 +63,10 @@ a {
   display: none;
 }
 
+.close-btn {
+  display: none;
+}
+
 .border-bottom {
   background-color: transparent;
   width: 20px;
@@ -209,15 +213,51 @@ h2 {
     justify-content: center;
   }
 
-  .navigation {
-    display: none;
-  }
-
   .menu-btn {
     display: flex;
     background-color: transparent;
     position: absolute;
     left: 1.5rem;
+  }
+
+  .mobile-nav-bg {
+    display: none;
+  }
+
+  .mobile-nav-bg.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .mobile-nav-bg.active nav {
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    padding-inline: 1.8rem;
+  }
+
+  .mobile-nav-bg.active a {
+    color: var(--Black);
+  }
+
+  .mobile-nav-bg.active .close-btn {
+    display: flex;
+    background-color: transparent;
+  }
+
+  .menu-btn.hidden {
+    display: none;
   }
 
   .slider {
