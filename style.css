@@ -24,6 +24,8 @@ img {
   display: block;
 }
 
+/* HEADER & NAVIGATION */
+
 .main-header {
   display: flex;
   gap: 3rem;
@@ -67,9 +69,12 @@ li:hover .border-bottom {
   background-color: var(--White);
 }
 
+/* HEADING SECTION - SLIDER */
+
 .heading-section {
   margin-top: -121px;
   display: flex;
+  height: 60vh;
 }
 
 .heading-section .main-image {
@@ -81,17 +86,16 @@ li:hover .border-bottom {
   display: grid;
   place-content: center;
   gap: 2rem;
-  padding-inline: 3rem;
+  padding-inline: 4.5rem;
   position: relative;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--Black);
 }
 
 p {
-  font-size: var(--fs);
   line-height: 1.5;
   color: var(--Dark-Gray);
 }
@@ -105,11 +109,11 @@ button {
   display: flex;
   text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 10px;
+  letter-spacing: 13px;
   color: var(--Black);
   background: url(images/icon-arrow.svg) no-repeat right top;
-  width: 215px;
-  transition: 0.3s;
+  width: 245px;
+  transition: 0.2s;
 }
 
 .shop-now-btn:hover {
@@ -125,7 +129,7 @@ button {
 
 .slider-buttons button {
   background-color: var(--Black);
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.8rem;
   width: 50%;
   transition: 0.3s;
 }
@@ -134,8 +138,15 @@ button {
   background-color: var(--Very-Dark-Gray);
 }
 
+/* ABOUT SECTION */
+
 .about-section {
   display: flex;
+  height: 40vh;
+}
+
+.about-section img {
+  width: 30vw;
 }
 
 .about-section__text {
@@ -143,8 +154,11 @@ button {
   place-content: center;
   gap: 1rem;
   padding: 2rem;
+  width: 40vw;
 }
 
 h2 {
   text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 7px;
 }
