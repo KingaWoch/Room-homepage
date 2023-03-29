@@ -31,7 +31,18 @@ function changeSlide(n) {
   currentSlide = n;
 }
 
-//  MOBILE NAGIVATION
+// KEYBOARD NAVIGATION
+
+document.addEventListener("keydown", (e) => {
+  if (e.code === "ArrowRight" || e.keyCode === 39) {
+    changeSlide(currentSlide + 1);
+  }
+  if (e.code === "ArrowLeft" || e.keyCode === 37) {
+    changeSlide(currentSlide - 1);
+  }
+});
+
+//  MOBILE NAVIGATION
 
 menuBtn.addEventListener("click", () => {
   navigation.classList.add("active");
