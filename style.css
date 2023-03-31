@@ -29,6 +29,12 @@ picture {
   display: block;
 }
 
+.main-header,
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
 /* HEADER & NAVIGATION */
 
 .main-header {
